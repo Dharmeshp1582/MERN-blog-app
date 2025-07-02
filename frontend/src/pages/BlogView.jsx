@@ -29,6 +29,7 @@ const BlogView = () => {
     const selectedBlog = blog.find(blog => blog._id === blogId)
     const [blogLike, setBlogLike] = useState(selectedBlog?.likes.length || 0 )
     const { comment } = useSelector(store => store.comment)
+    console.log(comment);
     const [liked, setLiked] = useState(selectedBlog?.likes.includes(user?._id) || false);
     const dispatch = useDispatch()
     console.log(selectedBlog);
@@ -171,7 +172,7 @@ const BlogView = () => {
                             </Button>
                             <Button variant="ghost" size="sm" className="flex items-center gap-1">
                                 <MessageSquare className="h-4 w-4" />
-                               <span>{comment.length} Comments</span>
+                               <span>{comment?.length || 0} Comments</span>
 
                             </Button>
                         </div>
