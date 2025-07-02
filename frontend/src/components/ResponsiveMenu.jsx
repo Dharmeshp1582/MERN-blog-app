@@ -25,7 +25,7 @@ const ResponsiveMenu = ({ openNav, setOpenNav, logoutHandler }) => {
                         <h1 className='text-sm text-slate-500'>Premium User</h1>
                     </div>
                 </div>
-                <nav className='mt-12'>
+                <nav className='mt-12'> 
                     <ul className='flex flex-col gap-7 text-2xl font-semibold '>
                         <Link to="/" onClick={() => setOpenNav(false)}><li className='cursor-pointer'>Home</li></Link>
                         <Link to="/blogs" onClick={() => setOpenNav(false)}><li className='cursor-pointer'>Blog</li></Link>
@@ -37,7 +37,7 @@ const ResponsiveMenu = ({ openNav, setOpenNav, logoutHandler }) => {
                     </ul>
                 </nav>
             </div>
-            <div className='pb-20'>
+            <div className='pb-20'>   
                 <h1>
                     Made with ❤️ by Dharmesh Patel
                 </h1>
