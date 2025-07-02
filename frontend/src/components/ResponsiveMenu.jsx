@@ -39,7 +39,7 @@ const ResponsiveMenu = ({ openNav, setOpenNav, logoutHandler }) => {
             </div>
             <div className='pb-20'>
                 <h1>
-                    Made with ❤️ by Rohit
+                    Made with ❤️ by Dharmesh Patel
                 </h1>
             </div>
         </div>

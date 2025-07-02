@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Logo from '../assets/logo.png'
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitterSquare } from 'react-icons/fa'
 
@@ -23,11 +23,9 @@ const Footer = () => {
         <div className='mb-6 md:mb-0'>
             <h3 className='text-xl font-semibold'>Quick Links</h3>
             <ul className='mt-2 text-sm space-y-2'>
-                <li>Home</li>
-                <li>Blogs</li>
-                <li>About Us</li>
-                {/* <li>Contact Us</li> */}
-                <li>FAQs</li>
+                <NavLink to={'/'} className="cursor-pointer"><li>Home</li></NavLink>
+                        <NavLink to={'/blogs'} className={`cursor-pointer`}><li>Blogs</li></NavLink>
+                        <NavLink to={'/about'} className={`cursor-pointer`}><li>About</li></NavLink>
             </ul>
         </div>
         {/* social media links */}
